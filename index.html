@@ -112,6 +112,21 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
 
 </style>
+<script>
+$("#about").click(function() {
+	$('html,body').animate({
+        scrollTop: $("#about-to").offset().top},'slow');
+	});
+$("#educations").click(function() {
+	$('html,body').animate({
+        scrollTop: $("#educations-to").offset().top},'slow');
+	});
+$("#projects").click(function() {
+	$('html,body').animate({
+        scrollTop: $("#projects-to").offset().top},'slow');
+	});
+
+</script>
 </head>
 
 <body class="w3-white">
@@ -161,7 +176,7 @@ function myFunction(divID) {
 		<!-- Navigation Bar to be placed -->
 			<div class="w3-bar-block w3-2017-tawny-port w3-mobile" style="width:85%">
 				<!-- Scroll pixel to About -->
-				<p class="w3-large"><a onclick="window.scrollTo(0,0)" class="my-bar-item w3-button"><b><i class="fa fa-check fa-fw w3-margin-right w3-opacity"></i>About</b></a></p> 
+				<p class="w3-large"><a id="about" class="my-bar-item w3-button"><b><i class="fa fa-check fa-fw w3-margin-right w3-opacity"></i>About</b></a></p> 
 				<!-- Scroll pixel to Educations -->
 				<p class="w3-large"><a onclick="window.scrollTo(0,600)" class="my-bar-item w3-button"><b><i class="fa fa-check fa-fw w3-margin-right w3-opacity"></i>Educations</b></a></p> 
 				<!-- Scroll pixel to Projects -->
@@ -192,7 +207,7 @@ function myFunction(divID) {
     <div class="w3-main" style="margin-left:20%; max-wdth:1400px;" >
     
       <div class="w3-container w3-card-2 w3-light-grey w3-margin-bottom">
-        <h2 class="w3-text-black w3-padding-16"><i class="fa fa-info-circle fa-fw w3-margin-right w3-xxlarge w3-text-tawny-port"></i>About</h2>
+        <h2 class="w3-text-black w3-padding-16" id="about-to"><i class="fa fa-info-circle fa-fw w3-margin-right w3-xxlarge w3-text-tawny-port"></i>About</h2>
         <div class="w3-container">
           <p class="w3-xlarge"> "Being an expert in pioneering new fields"</p>
 		  <p class="w3-large"> I want to be a person who pioneer new fields by applying knowledge and perspectives of various fields to their domain knowledge.
