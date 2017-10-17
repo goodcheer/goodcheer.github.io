@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>KyuChul Kim(English)- Main</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -110,26 +110,16 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 .w3-2017-hazelnut
 {color:#000;background-color:#cfb095}
 
+.first{
+	width:100%;
+}
+
+.second{
+	width:100%;
+}
 
 </style>
-<script
-  src="https://code.jquery.com/jquery-3.2.1.js"
-  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  crossorigin="anonymous">
-$("#about").click(function() {
-	$('html,body').animate({
-        scrollTop: $("#about-to").offset().top},'slow');
-	});
-$("#educations").click(function() {
-	$('html,body').animate({
-        scrollTop: $("#educations-to").offset().top},'slow');
-	});
-$("#projects").click(function() {
-	$('html,body').animate({
-        scrollTop: $("#projects-to").offset().top},'slow');
-	});
 
-</script>
 </head>
 
 <body class="w3-white">
@@ -167,7 +157,7 @@ function myFunction(divID) {
       <div class="w3-2017-tawny-port w3-text-white">
 		<p class="w3-xlarge w3-text-light-grey" style="margin: 10px 16px;"> <b>KYU CHUL KIM</b></p>
 		<div class="w3-display-container w3-margin-left">
-          <img src="me.jpg" style="width:90%" alt="Avatar">
+          <img src="me.jpg" style="max-width:90%; max-height:230px;" alt="Avatar">
           
         </div>
         <div class="w3-container w3-margin-bottom">
@@ -179,11 +169,11 @@ function myFunction(divID) {
 		<!-- Navigation Bar to be placed -->
 			<div class="w3-bar-block w3-2017-tawny-port w3-mobile" style="width:85%">
 				<!-- Scroll pixel to About -->
-				<p class="w3-large"><a id="about" class="my-bar-item w3-button"><b><i class="fa fa-check fa-fw w3-margin-right w3-opacity"></i>About</b></a></p> 
+				<p class="w3-large"><a onclick="window.scrollTo(0,0)" class="my-bar-item w3-button"><b><i class="fa fa-check fa-fw w3-margin-right w3-opacity"></i>About</b></a></p> 
 				<!-- Scroll pixel to Educations -->
-				<p class="w3-large"><a onclick="window.scrollTo(0,600)" class="my-bar-item w3-button"><b><i class="fa fa-check fa-fw w3-margin-right w3-opacity"></i>Educations</b></a></p> 
+				<p class="w3-large"><a onclick="window.scrollTo(0,500)" class="my-bar-item w3-button"><b><i class="fa fa-check fa-fw w3-margin-right w3-opacity"></i>Educations</b></a></p> 
 				<!-- Scroll pixel to Projects -->
-				<p class="w3-large"><a href="#" class="my-bar-item w3-button"><b><i class="fa fa-check fa-fw w3-margin-right w3-opacity"></i>Projects</b></a></p>
+				<p class="first w3-large"><button class="my-bar-item w3-button" onclick="window.scrollTo(0,906)"><b><i class="fa fa-check fa-fw w3-margin-right w3-opacity"></i>Projects</b></button></p>
 				<p class="w3-large"><a href="bib.html" class="my-bar-item w3-button"><b><i class="fa fa-check fa-fw w3-margin-right w3-opacity"></i>Bibliography</b></a></p>
 			</div>
 			<hr>
@@ -210,7 +200,7 @@ function myFunction(divID) {
     <div class="w3-main" style="margin-left:20%; max-wdth:1400px;" >
     
       <div class="w3-container w3-card-2 w3-light-grey w3-margin-bottom">
-        <h2 class="w3-text-black w3-padding-16" id="about-to"><i class="fa fa-info-circle fa-fw w3-margin-right w3-xxlarge w3-text-tawny-port"></i>About</h2>
+        <h2 class="w3-text-black w3-padding-16"><i class="fa fa-info-circle fa-fw w3-margin-right w3-xxlarge w3-text-tawny-port"></i>About</h2>
         <div class="w3-container">
           <p class="w3-xlarge"> "Being an expert in pioneering new fields"</p>
 		  <p class="w3-large"> I want to be a person who pioneer new fields by applying knowledge and perspectives of various fields to their domain knowledge.
@@ -449,7 +439,7 @@ In the future, I will continue my efforts to become a social expert while contin
         
       </div>
 
-	        <div class="w3-container w3-card-2 w3-light-grey">
+	    <div class="second w3-container w3-card-2 w3-light-grey">
         <h2 class="w3-text-black w3-padding-16"><i class="fa fa-archive w3-margin-right w3-xxlarge w3-text-tawny-port"></i>Projects</h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Convergence Foundation Project</b></h5>
