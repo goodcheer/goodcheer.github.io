@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <head>
 	<base target="_blank">
 <style>
@@ -121,6 +122,13 @@ video{float:left; margin-right:30px;}
 }
 
 </style>
+<script>
+function gotopage(id){
+	var elem = document.getElementById(id);
+	elem.scrollIntoView();
+}
+
+</script>
 
 </head>
 
@@ -171,11 +179,11 @@ function myFunction(divID) {
 		<!-- Navigation Bar to be placed -->
 			<div class="w3-bar-block w3-2017-tawny-port w3-mobile" style="width:85%">
 				<!-- Scroll pixel to About -->
-				<p class="w3-large"><a onclick="window.scrollTo(0,0)" class="my-bar-item w3-button"><b><i class="fa fa-check fa-fw w3-margin-right w3-opacity"></i>About</b></a></p> 
+				<p class="w3-large"><a onclick="gotopage('about')" class="my-bar-item w3-button"><b><i class="fa fa-check fa-fw w3-margin-right w3-opacity"></i>About</b></a></p> 
 				<!-- Scroll pixel to Educations -->
-				<p class="w3-large"><a onclick="window.scrollTo(0,770)" class="my-bar-item w3-button"><b><i class="fa fa-check fa-fw w3-margin-right w3-opacity"></i>Educations</b></a></p> 
+				<p class="w3-large"><a onclick="gotopage('Educations')" class="my-bar-item w3-button"><b><i class="fa fa-check fa-fw w3-margin-right w3-opacity"></i>Educations</b></a></p> 
 				<!-- Scroll pixel to Portfolio -->
-				<p class="first w3-large"><button class="my-bar-item w3-button" onclick="window.scrollTo(0,1205)"><b><i class="fa fa-check fa-fw w3-margin-right w3-opacity"></i>Portfolio</b></button></p>
+				<p class="first w3-large"><button class="my-bar-item w3-button" onclick="gotopage('Portfolio')"><b><i class="fa fa-check fa-fw w3-margin-right w3-opacity"></i>Portfolio</b></button></p>
 				<p class="w3-large"><a href="bib.html" class="my-bar-item w3-button"><b><i class="fa fa-check fa-fw w3-margin-right w3-opacity"></i>Bibliography</b></a></p>
 			</div>
 			<hr>
@@ -201,7 +209,7 @@ function myFunction(divID) {
 
     <div class="w3-main" style="margin-left:20%; max-wdth:1400px;" >
     
-      <div class="w3-container w3-card-2 w3-light-grey w3-margin-bottom">
+      <div class="w3-container w3-card-2 w3-light-grey w3-margin-bottom" id="about">
         <h2 class="w3-text-black w3-padding-16"><i class="fa fa-info-circle fa-fw w3-margin-right w3-xxlarge w3-text-tawny-port"></i>About</h2>
 		
           <p class="w3-xlarge"> "To be a creative expert in Sociology"</p>
@@ -235,7 +243,7 @@ function myFunction(divID) {
 		</div>
       </div>
 
-      <div class="w3-container w3-card-2 w3-light-grey w3-margin-bottom">
+      <div class="w3-container w3-card-2 w3-light-grey w3-margin-bottom" id="Educations">
         <h2 class="w3-text-black w3-padding-16"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-tawny-port"></i>Educations</h2>
         <div class="w3-container">
           <h4 class="w3-opacity"><b><a class="my-button" href="http://www.skku.edu/eng_home/skku/pr/pr_welcome.jsp">Sungkyunkwan University, Seoul, Korea</b></a></h4>
@@ -465,7 +473,7 @@ function myFunction(divID) {
         
       </div>
 
-	    <div class="second w3-container w3-card-2 w3-light-grey">
+	    <div class="second w3-container w3-card-2 w3-light-grey" id="Portfolio">
         <h2 class="w3-text-black w3-padding-16"><i class="fa fa-archive w3-margin-right w3-xxlarge w3-text-tawny-port"></i>Portfolio</h2>
         <div class="w3-container">
           <h4 class="w3-opacity"><b>Convergence Foundation Project</b></h4>
@@ -504,10 +512,25 @@ Although we could not get to the stage of launching the service, We were able to
 
         </div>
 		<div class="w3-container">
-          <h4 class="w3-opacity"><b>Textmining Facebook page using Latent Sementic Analysis(LSA)</b></h4>
-          <h6 class="w3-text-tawny-port"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017.10 - </h6>
-          <p> Still in progress</p><br>
+          <h4 class="w3-opacity"><b>Textmining Facebook page using LSA and LDA</b></h4>
+          <h6 class="w3-text-tawny-port"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017.9 - 2017-12 </h6>
+          <p> In South Korea, there are Facebook web pages called "Bamboo Forest" where university students share their ideas anonymously. 
+          By scraping this pages, we analysed what are the major issues around South Korean university students. We used LSA(Latent Sementic Analysis) to draw a word cloud, and LDA(Latent Dirichlet allocation) to find out main topics and terms that consists them. </p>
+
+          <br>
 		   <p style="text-align:center; margin-top:20px"><a href="https://github.com/goodcheer/Facebook-Textmining"><i class="w3-xlarge fa fa-github"></i>Textmining Github</a></p>
+          <hr>
+        </div>
+		<div class="w3-container">
+          <h4 class="w3-opacity"><b>Trading Strategy based on Decision Tree (CART) Algorithm</b></h4>
+          <h6 class="w3-text-tawny-port"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017.10 - 2017-12 </h6>
+          <p> Built a simple trading algorithm based on CART (Classification and Regression Tree) ML model. Among SP500 securities, the universe was 
+			  built according to Absolute Sharpe Ratio to avoid volatility, and Volume of security. With filtered 50 securities, Decision Tree models were built, and 
+			  the result of back testing was decent. </p>
+			<img src="ARNC.png" style="height:450px; max-width:90%;">
+			<p style="text-align:center; margin-top:20px"><a href="https://github.com/goodcheer/Financial-Informatics"><i class="w3-xlarge fa fa-github"></i>Financial-Informatics Github</a></p>
+
+          <br>
           <hr>
         </div>
       </div>
